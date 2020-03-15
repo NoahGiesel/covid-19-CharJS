@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 ITALIA</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h1>COVID-19 IN ITALIA </h1>
+    
+    <div  id="element_section">
+        
+        <div class="container">
+            <h3>DATI AGGIORNATI AL <p id="data_pubblicazione"> </p>  IN ITALIA</h3>
+            <h4>TAMPONI EFFETTUATI: <p id="tamponi"></p></h4>
+            <br>
+            <h4>TOTALE CASI: <p id="totale_casi"></p></h4>
+            <br>
+            <h4>TOTALE ATTUALMENTE POSITIVI: <p id="totale_attualmente_positivi"></p></h4>
+            <br>
+            <h4>NUOVI POSITIVI RISPETTO IERI: <p id="nuovi_attualmente_positivi"></p></h4>
+            <br>
+            <h4>TOTALE OSPEDALIZZATI: <p id="totale_ospedalizzati"></p></h4>
+            <br>
+            <h4>RICOVERATI CON SINTOMI: <p id="ricoverati_con_sintomi"></p></h4>
+            <br>
+            <h4>TERAPIA INTENSIVA: <p id="terapia_intensiva"></p></h4>
+            <br>
+            <h4>ISOLAMENTO DOMICILIARE: <p id="isolamento_domiciliare"></p></h4>
+            <br>
+            <h4>DIMESSI GUARITI: <p id="dimessi_guariti"></p></h4>
+            <br>
+            <h4>DECEDUTI: <p id="deceduti"></p></h4>
+        </div>
+        
+        <div class="grafico">
+            <h4>EVOLUZIONE ILLUSTRATIVA COVID-19 IN ITALIA OGNI <b style="text-decoration: underline;">TERZO GIORNO</b>: </h4>
+            <br>
+            <div class="canvas">
+                <canvas id="myChart"></canvas>
+            </div>
+            <h4>RAPPORTO GUARITI - DECEDUTI (OGNI TERZO GIORNO): </h4>
+            <div class="canvas">
+                <canvas id="myChart2"></canvas>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
